@@ -2,8 +2,8 @@
   "solution": {
     "lint-to-the-future": {
       "impact": "patch",
-      "oldVersion": "2.6.2",
-      "newVersion": "2.6.3",
+      "oldVersion": "2.6.3",
+      "newVersion": "2.6.4",
       "constraints": [
         {
           "impact": "patch",
@@ -13,5 +13,5 @@
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-03-07)\n\nlint-to-the-future 2.6.3 (patch)\n\n#### :memo: Documentation\n* `lint-to-the-future`\n  * [#74](https://github.com/mansona/lint-to-the-future/pull/74) fix dashboard action docs ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
+  "description": "## Release (2025-09-19)\n\nlint-to-the-future 2.6.4 (patch)\n\n#### :memo: Documentation\n* `lint-to-the-future`\n  * [#78](https://github.com/mansona/lint-to-the-future/pull/78) Fix suggested path to dashboard workflow file ([@backspace](https://github.com/backspace))\n\n#### Committers: 1\n- Buck Doyle ([@backspace](https://github.com/backspace))\n"
 }
