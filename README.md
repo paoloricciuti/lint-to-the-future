@@ -69,7 +69,7 @@ The **file-based ignore directives** that Lint to the Future adds are supposed t
 
 To see it in action, check out [ember-styleguide's dashboard](https://ember-learn.github.io/ember-styleguide/)
 
-The easiest way to set up the Lint to the Future Dashboard is to use the [lint-to-the-future-dashboard-action](https://github.com/mansona/lint-to-the-future-dashboard-action) if you are hosting your code on GitHub and don't mind your dashboard being public on GitHub Pages. You can read the README of the that project to find out more about it but the easist way to get started is to create a file called `.github/workflows/lint-to-the-future.yml` and add the following to that file: 
+The easiest way to set up the Lint to the Future Dashboard is to use the [lint-to-the-future-dashboard-action](https://github.com/mansona/lttf-dashboard) if you are hosting your code on GitHub and don't mind your dashboard being public on GitHub Pages. You can read the README of the that project to find out more about it but the easist way to get started is to create a file called `.github/workflows/lint-to-the-future.yml` and add the following to that file: 
 
 ```yml
 name: Lint to the Future Dashboard
