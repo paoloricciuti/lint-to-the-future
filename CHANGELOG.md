@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-09-19)
+
+lint-to-the-future 2.6.4 (patch)
+
+#### :memo: Documentation
+* `lint-to-the-future`
+  * [#78](https://github.com/mansona/lint-to-the-future/pull/78) Fix suggested path to dashboard workflow file ([@backspace](https://github.com/backspace))
+
+#### Committers: 1
+- Buck Doyle ([@backspace](https://github.com/backspace))
+
 ## Release (2025-03-07)
 
 lint-to-the-future 2.6.3 (patch)
