@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* eslint-disable prettier/prettier */
 
 const { join } = require('path');
 const { writeFileSync, readFileSync } = require('fs');
@@ -117,7 +116,7 @@ async function getLttfPlugins() {
 
     try {
       mod = await import(join(process.cwd(), 'node_modules', name, 'main.mjs'));
-    } catch (err) {
+    } catch {
       // fallback to trying importCwd
       mod = importCwd(name);
     }

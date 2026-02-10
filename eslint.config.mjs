@@ -89,6 +89,9 @@ export default [
       '.stylelintrc.js',
       '.template-lintrc.js',
       'ember-cli-build.js',
+      'cli.js',
+      './server/**/*.js',
+      'lib/testem-middleware/index.js'
     ],
     plugins: {
       n,
@@ -99,6 +102,16 @@ export default [
       ecmaVersion: 'latest',
       globals: {
         ...globals.node,
+      },
+    },
+  },
+  {
+    files: [
+      'node-tests/**/*.mjs',
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.mocha,
       },
     },
   },

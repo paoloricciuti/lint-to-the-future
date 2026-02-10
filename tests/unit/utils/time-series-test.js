@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import timeSeries from 'lint-to-the-future/utils/time-series';
 import {
   module,
