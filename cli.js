@@ -5,7 +5,6 @@ const { join } = require('path');
 const { writeFileSync, readFileSync } = require('fs');
 const { copy, mkdirp } = require('fs-extra');
 const importCwd = require('import-cwd');
-const fetch = require('node-fetch');
 const { Command } = require('commander');
 const { inspect } = require('util');
 const program = new Command();
