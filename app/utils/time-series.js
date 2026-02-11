@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 export default function timeSeries(data) {
   let results = {};
 
@@ -13,8 +12,8 @@ export default function timeSeries(data) {
             [date]: data[date][plugin][rule],
           };
         }
-      })
-    })
+      });
+    });
   });
 
   return results;

@@ -1,10 +1,9 @@
-/* eslint-disable prettier/prettier */
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import { guidFor } from '@ember/object/internals';
 
-import { Chart } from "frappe-charts/dist/frappe-charts.min.esm";
+import { Chart } from 'frappe-charts/dist/frappe-charts.min.esm';
 
 import normaliseData from '../utils/normalise-data';
 
@@ -13,11 +12,11 @@ function weeklyData(data) {
 
   let keys = Object.keys(data);
 
-  for(let x = 0; x < keys.length; x += 7) {
+  for (let x = 0; x < keys.length; x += 7) {
     newData[keys[x]] = data[keys[x]];
   }
 
-  newData[keys[keys.length -1]] = data[keys[keys.length -1]];
+  newData[keys[keys.length - 1]] = data[keys[keys.length - 1]];
 
   return newData;
 }
@@ -27,40 +26,39 @@ function monthlyData(data) {
 
   let keys = Object.keys(data);
 
-  for(let x = 0; x < keys.length; x += 30) {
+  for (let x = 0; x < keys.length; x += 30) {
     newData[keys[x]] = data[keys[x]];
   }
 
-  newData[keys[keys.length -1]] = data[keys[keys.length -1]];
+  newData[keys[keys.length - 1]] = data[keys[keys.length - 1]];
 
   return newData;
 }
-
 
 function getData(processedData, ruleName) {
   return {
     labels: Object.keys(processedData),
     datasets: [
-        {
-            name: ruleName,
-            type: "line",
-            values: Object.values(processedData)
-        }
+      {
+        name: ruleName,
+        type: 'line',
+        values: Object.values(processedData),
+      },
     ],
     // This is a hack to remove the y-markers that are designed to remove fractional numbers from the axis.
     // Now every chart will have a minimum height of 5. Not great but 🤷‍♂️
     yMarkers: [
-        {
-            label: '',
-            value: 0,
-            type: 'solid'
-        },
-        {
-          label: '',
-          value: 5,
-          type: 'solid'
-        }
-    ]
+      {
+        label: '',
+        value: 0,
+        type: 'solid',
+      },
+      {
+        label: '',
+        value: 5,
+        type: 'solid',
+      },
+    ],
   };
 }
 
@@ -94,7 +92,7 @@ export default class ChartComponent extends Component {
     }
 
     if (series === 'monthly') {
-      processedData = monthlyData(processedData)
+      processedData = monthlyData(processedData);
     }
 
     this.chart.update(getData(processedData, this.ruleName));
@@ -116,13 +114,13 @@ export default class ChartComponent extends Component {
     const data = getData(processedData, this.ruleName);
 
     this.chart = new Chart(element, {
-        data: data,
-        type: 'axis-mixed', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
-        height: 250,
-        colors: ['#7cd6fd', '#743ee2'],
-        axisOptions: {
-          xIsSeries: true
-        }
-    })
+      data: data,
+      type: 'axis-mixed', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
+      height: 250,
+      colors: ['#7cd6fd', '#743ee2'],
+      axisOptions: {
+        xIsSeries: true,
+      },
+    });
   }
 }

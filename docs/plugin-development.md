@@ -28,7 +28,7 @@ If `npx eslint .` shows some errors in some files for the `no-unused-vars` rule,
 
 ```js
 /* eslint-disable no-unused-vars */
-const unused = 'blah';
+const unused = "blah";
 ```
 
 After running `ignoreAll()`, running `npx eslint .` should return **no errors**.
@@ -53,7 +53,10 @@ The `list()` function is used to populate the data for the Lint to the Future Da
 
 ```json
 {
-  "quotes": ["addon/components/es-card-content.js", "addon/components/es-header-navbar-link.js"],
+  "quotes": [
+    "addon/components/es-card-content.js",
+    "addon/components/es-header-navbar-link.js"
+  ],
   "no-unused-vars": ["addon/components/es-header-navbar-link.js"]
 }
 ```

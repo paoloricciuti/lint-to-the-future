@@ -4,9 +4,9 @@ Lint to the Future (LTTF) is a useful tool that helps you to progressivly turn o
 
 ## How it works
 
-LTTF provides you with a few helpful tools but the two main ones that most people use regularly are the **ignore command** and the **Lint to the Future Dashboard**. 
+LTTF provides you with a few helpful tools but the two main ones that most people use regularly are the **ignore command** and the **Lint to the Future Dashboard**.
 
-When you add a new lint rule to your codebase you will likely have many files that are reporting errors for this new rule. This is when you run the following command with Lint To The Future: 
+When you add a new lint rule to your codebase you will likely have many files that are reporting errors for this new rule. This is when you run the following command with Lint To The Future:
 
 ```
 npx lint-to-the-future ignore
@@ -17,7 +17,6 @@ and it will automatically add **file-based ignore directives** to each of the fi
 When you are done adding file-based ignore directives to each of your files you can put together a dashboard that keeps track of which files you still need to come back and fix. The dashboard looks like this
 
 ![ember-learn github io_ember-styleguide_](https://user-images.githubusercontent.com/594890/193256435-0355d6be-c39f-4901-89a1-58dd6b871129.png)
-
 
 Keep reading to find out how to set it up 📚
 
@@ -69,7 +68,7 @@ The **file-based ignore directives** that Lint to the Future adds are supposed t
 
 To see it in action, check out [ember-styleguide's dashboard](https://ember-learn.github.io/ember-styleguide/)
 
-The easiest way to set up the Lint to the Future Dashboard is to use the [lint-to-the-future-dashboard-action](https://github.com/mansona/lttf-dashboard) if you are hosting your code on GitHub and don't mind your dashboard being public on GitHub Pages. You can read the README of the that project to find out more about it but the easist way to get started is to create a file called `.github/workflows/lint-to-the-future.yml` and add the following to that file: 
+The easiest way to set up the Lint to the Future Dashboard is to use the [lint-to-the-future-dashboard-action](https://github.com/mansona/lttf-dashboard) if you are hosting your code on GitHub and don't mind your dashboard being public on GitHub Pages. You can read the README of the that project to find out more about it but the easist way to get started is to create a file called `.github/workflows/lint-to-the-future.yml` and add the following to that file:
 
 ```yml
 name: Lint to the Future Dashboard
