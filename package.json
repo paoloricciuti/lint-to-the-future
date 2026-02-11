@@ -29,11 +29,11 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
+    "prepublishOnly": "rm -rf dist && npm run build",
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\" --prefixColors auto",
     "test:ember": "ember test",
-    "test:node": "mocha node-tests/*",
-    "prepublishOnly": "rm -rf dist && npm run build"
+    "test:node": "mocha node-tests/*"
   },
   "dependencies": {
     "commander": "^9.4.1",
@@ -100,7 +100,7 @@
     "prettier-plugin-ember-template-tag": "^2.1.0",
     "qunit": "^2.24.1",
     "qunit-dom": "^3.5.0",
-    "release-plan": "^0.9.0",
+    "release-plan": "^0.17.4",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^36.0.1",
     "temp": "^0.9.4",
