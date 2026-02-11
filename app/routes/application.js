@@ -1,5 +1,4 @@
 import Route from '@ember/routing/route';
-import fetch from 'fetch';
 import { Temporal } from 'temporal-polyfill'
 
 import env from 'lint-to-the-future/config/environment';
