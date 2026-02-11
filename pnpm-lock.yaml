@@ -56,7 +56,6 @@ specifiers:
   fs-extra: ^7.0.1
   glob: ^4.5.3
   globals: ^15.15.0
-  import-cwd: ^3.0.0
   lint-to-the-future-ember-template: ^4.1.0
   lint-to-the-future-eslint: ^3.3.0
   loader.js: ^4.7.0
@@ -77,7 +76,6 @@ specifiers:
 dependencies:
   commander: 9.5.0
   fs-extra: 7.0.1
-  import-cwd: 3.0.0
   temporal-polyfill: 0.2.5
 
 devDependencies:
@@ -9345,6 +9343,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       import-from: 3.0.0
+    dev: true
 
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -9359,6 +9358,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       resolve-from: 5.0.0
+    dev: true
 
   /imurmurhash/0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
@@ -12236,6 +12236,7 @@ packages:
   /resolve-from/5.0.0:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
     engines: {node: '>=8'}
+    dev: true
 
   /resolve-package-path/1.2.7:
     resolution: {integrity: sha512-fVEKHGeK85bGbVFuwO9o1aU0n3vqQGrezPc51JGu9UTXpFQfWq5qCeKxyaRUSvephs+06c5j5rPq/dzHGEo8+Q==}
