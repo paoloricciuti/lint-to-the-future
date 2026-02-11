@@ -91,7 +91,7 @@ export default [
       'ember-cli-build.js',
       'cli.js',
       './server/**/*.js',
-      'lib/testem-middleware/index.js'
+      'lib/testem-middleware/index.js',
     ],
     plugins: {
       n,
@@ -106,9 +106,7 @@ export default [
     },
   },
   {
-    files: [
-      'node-tests/**/*.mjs',
-    ],
+    files: ['node-tests/**/*.mjs'],
     languageOptions: {
       globals: {
         ...globals.mocha,

@@ -1,6 +1,5 @@
-
 {{#if @model.stats}}
-  <Stats @data={{@model.stats}}/>
+  <Stats @data={{@model.stats}} />
 {{/if}}
 
 <div class="graphs">
@@ -9,12 +8,15 @@
   {{/each-in}}
 </div>
 
-
 <details data-test-completed-rules>
   <summary>Completed Rules</summary>
   <div class="graphs px-2">
     {{#each-in this.rules.completedRules as |key value|}}
-      <Chart @rule={{key}} @data={{value}} @highestDate={{@model.highestDate}} />
+      <Chart
+        @rule={{key}}
+        @data={{value}}
+        @highestDate={{@model.highestDate}}
+      />
     {{/each-in}}
   </div>
 </details>

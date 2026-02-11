@@ -3,12 +3,13 @@
   <div class="flex">
     <h2>{{this.ruleName}}</h2>
     {{#if this.shouldShowLink}}
-      <LinkTo @route="rule" @model={{@rule}} data-test-view-files={{@rule}}>view files</LinkTo>
+      <LinkTo @route="rule" @model={{@rule}} data-test-view-files={{@rule}}>view
+        files</LinkTo>
     {{/if}}
   </div>
   <div {{did-insert this.renderChart}}></div>
   <div class="stv-radio-buttons-wrapper">
-  	<input
+    <input
       type="radio"
       class="stv-radio-button"
       name="{{this.guid}}"
@@ -18,8 +19,8 @@
       {{on "click" (fn this.selectTimeSeries "daily")}}
       data-test-time-button="daily"
     />
-  	<label for="{{this.guid}}-daily">Daily</label>
-  	<input
+    <label for="{{this.guid}}-daily">Daily</label>
+    <input
       type="radio"
       class="stv-radio-button"
       name="{{this.guid}}"
@@ -29,7 +30,7 @@
       {{on "click" (fn this.selectTimeSeries "weekly")}}
       data-test-time-button="weekly"
     />
-  	<label for="{{this.guid}}-weekly">Weekly</label>
+    <label for="{{this.guid}}-weekly">Weekly</label>
     <input
       type="radio"
       class="stv-radio-button"
@@ -40,6 +41,6 @@
       {{on "click" (fn this.selectTimeSeries "monthly")}}
       data-test-time-button="monthly"
     />
-  	<label for="{{this.guid}}-monthly">Monthly</label>
+    <label for="{{this.guid}}-monthly">Monthly</label>
   </div>
 </div>
